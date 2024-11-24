@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Helvetica Rounded';
+    src: url('https://db.onlinewebfonts.com/t/f5d5f4bd3128c2d32c20f52f6f8078d1.woff2') format('woff2');
+  }
+
+  html, body {
+    @apply bg-black text-white overflow-hidden m-0 p-0;
+    height: 100%;
+    width: 100%;
+  }
+
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.font-helvetica-rounded {
+  font-family: 'Helvetica Rounded', system-ui, sans-serif;
+}
+
+.font-light {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica Light", system-ui, sans-serif;
+  font-weight: 300;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
